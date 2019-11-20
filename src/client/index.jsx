@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Twts from './twts';
+
 class App extends React.Component {
   render() {
     return (
       <div>
-        tweets
+        <Twts />
       </div>
     );
   }
@@ -13,6 +15,6 @@ class App extends React.Component {
 
 const element = document.getElementById('app');
 
-ReactDOM.render(<App />, element );//
+ReactDOM.render(<App />, element); //
 
-console.log("tweet react");
+console.log('tweet react');
