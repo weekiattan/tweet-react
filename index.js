@@ -20,8 +20,8 @@ app.use('/', express.static('public'));
  * =======================================================================
  */
 
-app.get('/banana', (request, response)=>{
-  response.send("ehllo");
+app.get('/banana', (request, response) => {
+  response.send('hello');
 });
 
 /*
@@ -34,13 +34,13 @@ app.get('/react', (req, res) => {
   const myHtml = `
     <html>
       <body>
-        <h1>Wow, react</h1>
+        
         <div id="app"></div>
         <script type="text/javascript" src="/main.js"></script>
       </body>
     </html>
   `;
-  res.send( myHtml );
+  res.send(myHtml);
 });
 
 /*
@@ -50,5 +50,7 @@ app.get('/react', (req, res) => {
  */
 
 app.listen(process.env.PORT, () => {
-  console.log(`ssssserver is now running on http://localhost:${process.env.PORT}`);
+  console.log(
+    `ssssserver is now running on http://localhost:${process.env.PORT}`
+  );
 });
